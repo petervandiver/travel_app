@@ -22,7 +22,7 @@ $(document).ready(function () {
             animation: google.maps.Animation.DROP
         });
 
-        var contentString = '<h2>'+ address + '</h2>' + '<p>'+ desription + '</p>';
+        var contentString = '<h2>'+ address + '</h2>' + '<p>'+ description + '</p>';
 
         var infowindow = new google.maps.InfoWindow({
             content: contentString
