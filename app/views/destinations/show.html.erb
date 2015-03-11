@@ -1,0 +1,32 @@
+<%= javascript_tag do %>
+  latitude = '<%= j @destination.latitude.to_s %>';
+  longitude = '<%= j @destination.longitude.to_s %>';
+  address = '<%= j @destination.address %>';
+  desription = '<%= j @destination.desription %>';
+<% end %>
+
+<p id="notice"><%= notice %></p>
+
+<h1><%= @destination.address %></h1>
+
+<p><%= @destination.latitude %>, <%= @destination.longitude %></p>
+
+<p>
+  <strong>City:</strong>
+  <%= @destination.city %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @destination.country %>
+</p>
+
+<div id="destination-map"></div>
+
+<p>
+  <strong>Desription:</strong>
+  <%= @destination.desription %>
+</p>
+
+<%= link_to 'Edit', edit_destination_path(@destination) %> |
+<%= link_to 'Back', destinations_path %>
